@@ -19,12 +19,15 @@ UPDATE MAKEFILE:
 - Run `make install` to install the tool's venv so that make check works.
 - From this point on, you must fix any issues that `make check` raises.
 
+UPDATE CODE-WORKSPACE:
+- Add the new tool to the `.code-workspace` at the root.
+
 CONTINUE:
 - Now build the tool according to the user's specifications until it is complete.
 
 FINALIZE:
-- The tool should be runnable using `uvx --from <relative from the root path> <optional args>`. Do not install the tool globally.
-- You can test the tool with a command like `uvx --from <relative from the root path> <optional args> --help`
+- The tool should be runnable using `uvx --isolated --from <relative from the root path> <optional args>`. Do not install the tool globally.
+- You can test the tool with a command like `uvx -isolated --from <relative from the root path> <optional args> --help`
 
 ## Specific Rules to Making Tools
 - Keep the README simple. Only add the commands on how to run it and its options.

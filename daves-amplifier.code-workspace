@@ -21,6 +21,13 @@
                 "python.defaultInterpreterPath": "${workspaceFolder}/.venv"
             }
         },
+        {
+            "name": "tools-docs-updater",
+            "path": "./tools/docs-updater",
+            "settings": {
+                "python.defaultInterpreterPath": "${workspaceFolder}/.venv"
+            }
+        },
     ],
     "settings": {
         "python.testing.unittestEnabled": false,

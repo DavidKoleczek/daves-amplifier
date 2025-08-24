@@ -23,6 +23,4 @@ Based on [ai-code-project-template](https://github.com/bkrabach/ai-code-project-
 
 # Roadmap
 
-- [ ] Tool to fetch docs
-- [ ] Make this a vscode workspace
 - [ ] Claude Code SDK

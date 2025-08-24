@@ -1,6 +1,7 @@
 {
   "permissions": {
     "allow": [
+      "Bash(cp:*)",
       "Bash(find:*)",
       "Bash(make:*)",
       "Bash(mv:*)",
