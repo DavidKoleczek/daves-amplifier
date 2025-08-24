@@ -13,13 +13,16 @@ Based on [ai-code-project-template](https://github.com/bkrabach/ai-code-project-
    3. make
        - On Windows, you can download it using [UniGetUI](https://github.com/marticliment/UnigetUI) and use [ezwinports make](https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ezwinports/make)
 2. Start `claude` and run the command `/destructive-init`. Claude will ask you a few brief questions then customize the template for you.
-3. Run `make`
-   1. Note this might prompt you for your `sudo` password to install browser dependencies.
+3. Run `make first-time` for initial setup
+   1. This will prompt you for your `sudo` password to install browser dependencies for crawl4ai
+   2. For subsequent env updates, just run `make`
 4. Setup your `.env` based on `.env.sample`
-5. In `claude`, run the command `/prime`
+5. Open the VSCode workspace using `daves-amplifier.code-workspace`
+6. In `claude`, run the command `/prime`
 
 
 # Roadmap
 
 - [ ] Tool to fetch docs
+- [ ] Make this a vscode workspace
 - [ ] Claude Code SDK

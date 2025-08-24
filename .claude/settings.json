@@ -1,23 +1,15 @@
 {
   "permissions": {
     "allow": [
-      "Bash(make:*)"
+      "Bash(find:*)",
+      "Bash(make:*)",
+      "Bash(mv:*)",
+      "Bash(tree:*)"
     ],
     "deny": [],
     "ask": []
   },
   "hooks": {
-    "Stop": [
-      {
-        "matcher": "Edit|MultiEdit|Write",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "make check"
-          }
-        ]
-      }
-    ],
     "PostToolUse": [
       {
         "matcher": "Write|Edit|MultiEdit",

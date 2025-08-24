@@ -7,7 +7,5 @@
       "source.organizeImports": "explicit"
     },
     "editor.defaultFormatter": "charliermarsh.ruff"
-  },
-  "python.testing.unittestEnabled": false,
-  "python.testing.pytestEnabled": true,
+  }
 }
