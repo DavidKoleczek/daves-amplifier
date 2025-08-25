@@ -15,6 +15,8 @@ CHANGE:
      - name
      - known-first-party
      - description
+   - Rename the folder under `py_project/src` to match the new project name
+   - Change any imports using `py_project` in the included `.py` files in the package.
 2. Makefile
    - Change the name of the PYTHON_PACKAGES to make the previous changes. By default it will be py_project.
 3. `daves-amplifier.code-workspace`
