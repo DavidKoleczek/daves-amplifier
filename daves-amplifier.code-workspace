@@ -50,6 +50,7 @@
         "recommendations": [
             "charliermarsh.ruff",
             "ms-python.python",
+            "ms-vscode.makefile-tools",
             "yzhang.markdown-all-in-one",
         ]
     }
