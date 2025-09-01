@@ -21,6 +21,22 @@ Based on [ai-code-project-template](https://github.com/bkrabach/ai-code-project-
 6. In `claude`, run the command `/prime`
 
 
+## Structure
+
+### `py_projects`
+
+Contains Python `uv` packages.
+
+### `apps`
+
+Vite + React + TypeScript apps.
+Includes these common dependencies: Tailwind CSS, Shadcn, React Router (declarative), Motion, and Lucide React
+
+
 # Roadmap
 
+## Features
 - [ ] Claude Code SDK
+
+## Bug Fixes
+- [ ] Format on save does not work for `.tsx` files

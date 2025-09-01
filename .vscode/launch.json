@@ -2,22 +2,19 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Python Debugger: Current File",
-      "type": "debugpy",
+      "name": "Template App (pnpm dev)",
+      "type": "node-terminal",
       "request": "launch",
-      "program": "${file}",
-      "console": "integratedTerminal",
-      "justMyCode": false
-    },
+      "command": "pnpm run dev",
+      "cwd": "${workspaceFolder}/apps/_react-vite-template"
+    }
+  ],
+  "compounds": [
     {
-      "name": "Python Debugger: Pytest",
-      "type": "debugpy",
-      "request": "launch",
-      "module": "pytest",
-      "args": [
-        "${file}"
+      "name": "Launch All",
+      "configurations": [
+        "Template App (pnpm dev)"
       ],
-      "console": "integratedTerminal"
     }
   ]
 }

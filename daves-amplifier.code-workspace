@@ -21,6 +21,10 @@
                 "python.defaultInterpreterPath": "${workspaceFolder}/.venv"
             }
         },
+        {
+            "name": "apps-_react-vite-template",
+            "path": "./apps/_react-vite-template",
+        }
     ],
     "settings": {
         "python.testing.unittestEnabled": false,
@@ -41,7 +45,10 @@
     },
     "extensions": {
         "recommendations": [
+            "bradlc.vscode-tailwindcss",
             "charliermarsh.ruff",
+            "dbaeumer.vscode-eslint",
+            "esbenp.prettier-vscode",
             "ms-python.python",
             "ms-vscode.makefile-tools",
             "yzhang.markdown-all-in-one",

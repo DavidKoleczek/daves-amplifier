@@ -4,24 +4,29 @@ The repo was initialized using a GitHub template. Your job is to customize it fo
 
 COLLECT: 
 *Collect the following information from the user*
-- The name of the Python package
-- A brief description of the project
+- The name of the new Python project/package they would like to have created based on `_py_project_template`
+  - A brief description of the project
+- If they would like a React app created and if so what it should be named.
 
 CHANGE:
-*Now make changes to the template to match the info the user provided*
-1. Python Package
-   - Name of the py_project folder
-   - In `py_project/pyproject.toml`
+*Now initialize from the templates based on the user's previous input*
+1. Create a new Python Project by copying `py_projects/_py_project_template` into a new dir under `py_projects`. Then change the following about it based on the user's input
+   - Name of the `_py_project_template` folder
+   - In `_py_project_template/pyproject.toml`
      - name
      - known-first-party
      - description
    - Rename the folder under `py_project/src` to match the new project name
    - Change any imports using `py_project` in the included `.py` files in the package.
-2. Makefile
-   - Change the name of the PYTHON_PACKAGES to make the previous changes. By default it will be py_project.
-3. `daves-amplifier.code-workspace`
-   - Change the name of the workspace file to match the new project name
-   - Change the name of the folder in the workspace file to match the new project name
+   - In the `Makefile` at the root, add the new folder name to `SUBDIRS` to so it can be build from the root.
+   - Now run `make install` and `make check` and fix any errors related to this (if any).
+2. Create a new React app, if the user requested it.
+   - Copy the `_react-vite-template` template to a new dir under `apps`
+   - Update the `package.json` file in the new app directory to match the new project name
+   - Now run `make install` and `make check` and fix any related to this (if any).
+3. Update `daves-amplifier.code-workspace`
+   - Change the name of the workspace file to match the name of their repo.
+   - Add any newly created Python projects and React apps to the workspace file.
 4. README.md
    - The README should just be left with what is under ## Setup (Replace the # daves-amplifier with the new project)
      - Except you should remove the step that starts with: Start claude and run the command /destructive-init...

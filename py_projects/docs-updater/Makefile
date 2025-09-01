@@ -2,7 +2,7 @@
 
 UV_SYNC_INSTALL_ARGS := --all-extras --all-groups
 
-.PHONY: all install first-time check upgrade run clean
+.PHONY: all install first-time check upgrade clean
 
 all: install check
 

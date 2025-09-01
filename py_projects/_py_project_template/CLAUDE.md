@@ -19,3 +19,7 @@ The latest dependencies are available in the `pyproject.toml` file. You should n
 - Do not use relative imports.
 - Use dotenv to load environment variables for local development. Assume we have a `.env` file
 - Crawl4AI has type issues with their output types. This is the **only** library where you can use `# type: ignore` to fix the issues.
+
+## Code Change Instructions
+- After each code change, `make check` is automatically run. Fix any issues that arise.
+- `make check` will remove any unused imports. So if you need to use a new import, be sure to use it as you import it or else it will automatically removed.
