@@ -8,22 +8,15 @@
             }
         },
         {
-            "name": "py_project",
-            "path": "./py_project",
+            "name": "py_projects-_py_project_template",
+            "path": "./py_projects/_py_project_template",
             "settings": {
                 "python.defaultInterpreterPath": "${workspaceFolder}/.venv"
             }
         },
         {
-            "name": "tools-_py_tool_template",
-            "path": "./tools/_py_tool_template",
-            "settings": {
-                "python.defaultInterpreterPath": "${workspaceFolder}/.venv"
-            }
-        },
-        {
-            "name": "tools-docs-updater",
-            "path": "./tools/docs-updater",
+            "name": "py_projects-docs-updater",
+            "path": "./py_projects/docs-updater",
             "settings": {
                 "python.defaultInterpreterPath": "${workspaceFolder}/.venv"
             }

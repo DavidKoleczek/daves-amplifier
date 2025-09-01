@@ -1,6 +1,6 @@
 # daves-amplifier
 
-My AI-first development environment template. It is currently configured to work with Claude Code.
+My AI-first development environment template. It is currently configured best for use with Claude Code.
 
 Based on [ai-code-project-template](https://github.com/bkrabach/ai-code-project-template/tree/main).
 

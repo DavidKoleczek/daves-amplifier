@@ -1,9 +1,9 @@
 .DEFAULT_GOAL := install
 
-SUBDIRS := py_project tools/_py_tool_template tools/docs-updater
+SUBDIRS := py_projects/_py_project_template py_projects/docs-updater
 
 # Recursive targets that run in all subdirectories
-.PHONY: all install first-time check upgrade
+.PHONY: all install first-time check upgrade clean
 
 all: install check
 
@@ -14,7 +14,7 @@ install:
 		$(MAKE) -C $$dir install; \
 	done
 
-# First-time setup with crawl4ai (requires sudo)
+# Any special first time setup
 first-time:
 	@for dir in $(SUBDIRS); do \
 		echo "First-time setup in $$dir..."; \
@@ -33,4 +33,11 @@ upgrade:
 	@for dir in $(SUBDIRS); do \
 		echo "Upgrading $$dir..."; \
 		$(MAKE) -C $$dir upgrade; \
+	done
+
+# Clean all .venv directories
+clean:
+	@for dir in $(SUBDIRS); do \
+		echo "Cleaning $$dir..."; \
+		$(MAKE) -C $$dir clean; \
 	done
