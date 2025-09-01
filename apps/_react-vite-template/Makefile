@@ -1,6 +1,6 @@
 .DEFAULT_GOAL := install
 
-.PHONY: all install first-time check upgrade run
+.PHONY: all install first-time check upgrade
 
 all: install check
 

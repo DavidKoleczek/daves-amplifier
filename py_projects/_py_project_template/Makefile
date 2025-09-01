@@ -21,5 +21,4 @@ upgrade:
 	uv lock --upgrade && uv sync --all-extras --all-groups
 
 clean:
-	@echo "Cleaning .venv directory..."
 	@rm -rf .venv
