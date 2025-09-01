@@ -18,17 +18,20 @@ CHANGE:
      - description
    - Rename the folder under `py_project/src` to match the new project name
    - Change any imports using `py_project` in the included `.py` files in the package.
-   - In the `Makefile` at the root, add the new folder name to `SUBDIRS` to so it can be build from the root.
+   - In the `Makefile` at the root, add the new folder name to `SUBDIRS` to so it can be built from the root.
    - Now run `make install` and `make check` and fix any errors related to this (if any).
 2. Create a new React app, if the user requested it.
    - Copy the `_react-vite-template` template to a new dir under `apps`
-   - Update the `package.json` file in the new app directory to match the new project name
+   - Update the `package.json` file in the new app directory to match the name the user asked for.
+   - Update  `index.html` to have the title match the name the user asked for.
+   - In the `Makefile` at the root, add the new folder name to `SUBDIRS` to so it can be built from the root.
    - Now run `make install` and `make check` and fix any related to this (if any).
+   - Add the new app to the `launch.json` under the root's `.vscode` folder.
 3. Update `daves-amplifier.code-workspace`
    - Change the name of the workspace file to match the name of their repo.
    - Add any newly created Python projects and React apps to the workspace file.
 4. README.md
-   - The README should just be left with what is under ## Setup (Replace the # daves-amplifier with the new project)
+   - The README should just be left with what is under ## Setup (Replace the # daves-amplifier with the new project) and ## Structure
      - Except you should remove the step that starts with: Start claude and run the command /destructive-init...
    - Change the introduction to the user's project name (usually the repo name if they didn't specify exactly)
    - Remove the roadmap section entirely

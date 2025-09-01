@@ -1,6 +1,6 @@
 .DEFAULT_GOAL := install
 
-SUBDIRS := py_projects/_py_project_template py_projects/docs-updater
+SUBDIRS := py_projects/_py_project_template py_projects/docs-updater apps/_react-vite-template
 
 # Recursive targets that run in all subdirectories
 .PHONY: all install first-time check upgrade clean
