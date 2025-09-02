@@ -37,7 +37,7 @@ CHANGE:
    - Remove the roadmap section entirely
 
 CLEANUP:
-- Remove `.claude/commands/destructive_init.md`
+- Remove `.claude/commands/destructive-init.md`
 
 FINAL USER INSTRUCTIONS:
 *Tell the briefly user how to continue*

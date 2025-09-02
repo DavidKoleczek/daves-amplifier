@@ -42,6 +42,7 @@
             "editor.defaultFormatter": "charliermarsh.ruff"
         },
         "makefile.configureOnOpen": false,
+        "ruff.interpreter": ["${workspaceFolder}/py_projects/_py_project_template/.venv/"] // This needs to always be set to a venv with ruff installed
     },
     "extensions": {
         "recommendations": [
